@@ -49,8 +49,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'authcont';
+$route['default_controller'] = 'Home_cont';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['logout'] = '/';
+// Login
+$route['Login'] = 'Login_cont/Login';
+$route['Logged_in'] = 'Login_cont/Logged_in';
+$route['Register'] = 'Login_cont/Register';
+
+//-------------------------------- ADMIN ROUTES ------------------------------------
+$route['Admin/Dashboard'] 	  = 'Login_cont';
+$route['Admin/Category']  	  = 'Admin_cont/Category';
+$route['Admin/Sub-Category']  = 'Admin_cont/Subcategory';
+$route['Admin/Products']	  = 'Admin_cont/Products';
+$route['Admin/Add_Product']	  = 'Admin_cont/Addproduct';
+$route['Admin/Orders']		  = 'Admin_cont/Orders';
+
+//-------------------------------- USER ROUTES ------------------------------------
+$route['Categories']['GET']	= 'Home_cont/products';
+$route['My-Account']		= 'Home_cont/myaccount';
+$route['Orders']			= 'Home_cont/orders';
+$route['View-Cart']			= 'Cart_cont/index';

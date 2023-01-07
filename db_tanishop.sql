@@ -37,9 +37,9 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`cat_id`, `cat_name`) VALUES
-(1, 'Sepatu Perempuan'),
-(2, 'sepatu pria'),
-(3, 'buah');
+(4, 'Sayur'),
+(6, 'Buah'),
+(7, 'Bumbu Dapur');
 
 -- --------------------------------------------------------
 
@@ -61,7 +61,8 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`order_id`, `user_id`, `prod_id`, `qty`) VALUES
 (11, 4, 8, 1),
 (12, 4, 8, 1),
-(13, 4, 7, 1);
+(13, 4, 7, 1),
+(14, 5, 15, 1);
 
 -- --------------------------------------------------------
 
@@ -78,6 +79,16 @@ CREATE TABLE `products` (
   `sub_id` int(11) NOT NULL,
   `cat_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`prod_id`, `prod_name`, `prod_desc`, `prod_price`, `prod_img`, `sub_id`, `cat_id`) VALUES
+(15, 'Wortel', 'Wortel', 10000, 'Wortel.jpeg', 7, 4),
+(17, 'Timun', 'Timun', 8000, 'Timun.jpeg', 7, 4),
+(18, 'Melon', 'Melon', 20000, 'Melon.jpeg', 7, 4),
+(19, 'Jeruk', 'Jeruk', 15000, 'Jeruk.jpeg', 7, 4);
 
 -- --------------------------------------------------------
 
@@ -96,7 +107,9 @@ CREATE TABLE `sub_category` (
 --
 
 INSERT INTO `sub_category` (`sub_id`, `sub_name`, `cat_id`) VALUES
-(4, 'perempuan', 1);
+(7, 'Sayur', 4),
+(8, 'Buah', 6),
+(9, 'Bumbu Dapur', 7);
 
 -- --------------------------------------------------------
 
@@ -122,8 +135,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`, `password`, `role`, `address`, `phone`, `gender`, `registered_on`) VALUES
-(1, 'admin', 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'admin@admin@admin', '1234567890', 'M', '2022-11-27 07:52:00'),
-(4, 'ujang', 'aja', 'cuwancari@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'user', 'kjkjkj', '08218346', 'M', '2023-01-06 02:24:31');
+(1, 'admin', 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', 'admin', 'admin@admin@admin', '1234567890', 'M', '2022-11-27 07:52:00');
 
 --
 -- Indexes for dumped tables
@@ -167,31 +179,31 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `cat_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `prod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `sub_category`
 --
 ALTER TABLE `sub_category`
-  MODIFY `sub_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `sub_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
