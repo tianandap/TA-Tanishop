@@ -9,7 +9,7 @@
 						<div class="col-md-5 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
-								<p>We are a leading company in the selling of shoese online and with great after service.</p>
+								<p>We are a leading company in the selling of products online and with great after service.</p>
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>Jl. Teuku Umar No. 19</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+62 837466556</a></li>
