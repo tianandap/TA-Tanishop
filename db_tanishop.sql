@@ -85,10 +85,10 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`prod_id`, `prod_name`, `prod_desc`, `prod_price`, `prod_img`, `sub_id`, `cat_id`) VALUES
-(15, 'Wortel', 'Wortel', 10000, 'Wortel.jpeg', 7, 4),
-(17, 'Timun', 'Timun', 8000, 'Timun.jpeg', 7, 4),
-(18, 'Melon', 'Melon', 20000, 'Melon.jpeg', 7, 4),
-(19, 'Jeruk', 'Jeruk', 15000, 'Jeruk.jpeg', 7, 4);
+(15, 'Wortel', 'Wortel', 10000, 'Wortel.jpeg', 4, 4),
+(17, 'Timun', 'Timun', 8000, 'Timun.jpeg', 4, 4),
+(18, 'Melon', 'Melon', 20000, 'Melon.jpeg', 6, 6),
+(19, 'Jeruk', 'Jeruk', 15000, 'Jeruk.jpeg', 6, 6);
 
 -- --------------------------------------------------------
 
