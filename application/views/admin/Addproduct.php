@@ -117,7 +117,7 @@
                 },
                 error: function (response) {
                     alert("Error in adding the product. PLease try again.");  
-                    window.loaction.href="<?php echo base_url()?>Admin/Add-product";
+                    window.loaction.href="<?php echo base_url()?>Admin/Add_product";
                 }
             }); 
         }
