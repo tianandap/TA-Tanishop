@@ -123,7 +123,7 @@
         }
         else{
             alert("All fields mandatory, Please fill again.");
-            window.loaction.href="<?php echo base_url()?>Admin/Add-product";
+            window.loaction.href="<?php echo base_url()?>Admin/Products";
         }
     });
 

@@ -22,7 +22,7 @@
                                                         <h5><p class="card-text"><?php echo $products['prod_desc']; ?></p></h5>
                                                     </div>
                                                     <div class="card-footer border-dark">
-                                                        <h4>₹ <?php echo $products['prod_price'];?>
+                                                        <h4>Rp <?php echo $products['prod_price'];?>
                                                             <button class="btn btn-danger btn-sm" style="float: right" onclick="Deletedata('<?php echo $products['prod_id']?>')" >Delete</button>
                                                         </h4>
                                                     </div>
