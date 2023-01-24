@@ -8,7 +8,7 @@
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header"><i class="fas fa-boxes"></i> Products
-                                <button class="btn btn-primary btn-sm" style="float: right;" onclick="window.location.href='<?php echo base_url()?>Admin/Add-Product'"><i class="fas fa-plus"></i> Add new</button>
+                                <button class="btn btn-primary btn-sm" style="float: right;" onclick="window.location.href='<?php echo base_url()?>Admin/Add_Product'"><i class="fas fa-plus"></i> Add new</button>
                             </div>
                             <div class="card-body">
                                 <div class="card-deck">
@@ -22,7 +22,7 @@
                                                         <h5><p class="card-text"><?php echo $products['prod_desc']; ?></p></h5>
                                                     </div>
                                                     <div class="card-footer border-dark">
-                                                        <h4>₹ <?php echo $products['prod_price'];?>
+                                                        <h4>Rp <?php echo $products['prod_price'];?>
                                                             <button class="btn btn-danger btn-sm" style="float: right" onclick="Deletedata('<?php echo $products['prod_id']?>')" >Delete</button>
                                                         </h4>
                                                     </div>

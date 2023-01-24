@@ -65,6 +65,7 @@ class Admin_cont extends CI_Controller {
 		$data['prod']   = $this->Admin_model->products();
 
 		$this->load->view('admin/include/header',$data);
+		$this->load->view('admin/products', $data);
 	}
 
 	function Addproduct(){
