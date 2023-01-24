@@ -13,7 +13,7 @@
 						<?php foreach($this->cart->contents() as $items){ ?>
 						<div class="order-col">
 							<div>1x <?php echo $items['name']?></div>
-							<div>₹ <?php echo $this->cart->format_number($items['price'])?> &nbsp;&nbsp;&nbsp;&nbsp; 
+							<div>Rp <?php echo $this->cart->format_number($items['price'])?> &nbsp;&nbsp;&nbsp;&nbsp; 
 								<button style="background-color: #D10024; color: white" class="btn" onclick="removefromcart('<?php echo $items['rowid']?>')">
 									<i class="fa fa-times"></i>
 								</button>
@@ -30,7 +30,7 @@
 								$sum = $sum + $items['price'];
 							}
 						?>
-						<div><strong class="order-total">₹ <?php echo $this->cart->format_number($sum);?></strong></div>
+						<div><strong class="order-total">Rp <?php echo $this->cart->format_number($sum);?></strong></div>
 					</div>
 				</div>			
 				<div class="col-md-3"></div>	 
