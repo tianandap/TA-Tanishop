@@ -8,7 +8,7 @@ Colaborator
 4. Clarisa Amanda Fernandis (19313023)
 5. Nadia Aftirah (19313054)
 
-Link Hosting : Menyusul...
+Link Hosting : https://tanishop.tisia.net/
 
 ###################
 What is CodeIgniter
