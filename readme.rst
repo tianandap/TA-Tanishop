@@ -10,6 +10,9 @@ Colaborator
 
 Link Hosting : https://tanishop.tisia.net/
 
+Akses Admin  : adminsatu@gmail.com
+Password     : qwerty123
+
 ###################
 What is CodeIgniter
 ###################
