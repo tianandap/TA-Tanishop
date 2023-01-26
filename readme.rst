@@ -10,8 +10,7 @@ Colaborator
 
 Link Hosting : https://tanishop.tisia.net/
 
-Akses Admin  : adminsatu@gmail.com
-<br>
+Akses Admin  : adminsatu@gmail.com\n
 Password     : qwerty123
 
 ###################
